@@ -22,7 +22,7 @@ describe "SerpApi Product JSON" do
       end
 
       it "product is 16618293882053925702" do
-         expect(@result["product"]).to eql("16618293882053925702")
+         expect(@result["product"]).to eql(16618293882053925702)
       end
   
       it "title is Sceptre X505BV-FSR - 50 LED TV - 1080p" do
