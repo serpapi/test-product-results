@@ -21,8 +21,8 @@ describe "SerpApi Product JSON" do
         @result = @json["product_results"]
       end
 
-      it "product is 16618293882053925702" do
-         expect(@result["product"]).to eql(16618293882053925702)
+      it "product_id is 16618293882053925702" do
+         expect(@result["product_id"]).to eql(16618293882053925702)
       end
   
       it "title is Sceptre X505BV-FSR - 50 LED TV - 1080p" do
