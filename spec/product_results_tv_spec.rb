@@ -55,7 +55,7 @@ describe "SerpApi Product JSON" do
       end
       
       it "has media" do
-        expect(@result["media"]).to be_a(Hash)
+        expect(@result["media"]).to be_an(Array)
       end
 
     end
