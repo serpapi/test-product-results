@@ -12,13 +12,14 @@ describe "SerpApi Product JSON" do
     end
 
     it "contains Product results hash" do
-      expect(@json["product_results"]).to be_an(Hash)
+      expect(@json["product_results"]).to be_a(Hash)
     end
 
     describe "have correct Product results" do
 
       before :all do
         @result = @json["product_results"]
+        p @result
       end
 
       it "product_id is 16618293882053925702" do
@@ -26,7 +27,7 @@ describe "SerpApi Product JSON" do
       end
   
       it "title is Sceptre X505BV-FSR - 50 LED TV - 1080p" do
-        expect(@result["title"]).to eql("Sceptre X505BV-FSR - 50 LED TV - 1080p")
+        expect(@result["title"]).to eql("Sceptre X505BV-FSR - 50\" LED TV - 1080p")
       end
 
       it "has a title" do
@@ -54,7 +55,7 @@ describe "SerpApi Product JSON" do
       end
       
       it "has media" do
-        expect(@result["media"]).to_not be_empty
+        expect(@result["media"]).to be_a(Hash)
       end
 
     end
