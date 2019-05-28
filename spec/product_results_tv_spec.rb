@@ -19,7 +19,6 @@ describe "SerpApi Product JSON" do
 
       before :all do
         @result = @json["product_results"]
-        p @result
       end
 
       it "product_id is 16618293882053925702" do
